@@ -1,3 +1,9 @@
+/**
+ * Simply copies a string to clipboard
+ *
+ * @param value A string value to copy
+ * @param cb  Callback function
+ */
 export default async function copyToClipboard(value: string, cb?: () => void) {
     try {
         await navigator.clipboard.writeText(value);
