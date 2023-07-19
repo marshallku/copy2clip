@@ -2,26 +2,26 @@
 
 Simply copies a string to clipboard
 
-[![License](https://img.shields.io/npm/l/copytoclipboard.svg)](https://www.npmjs.com/package/copytoclipboard)
-[![NPM Version](https://img.shields.io/npm/v/copytoclipboard.svg)](https://www.npmjs.com/package/copytoclipboard)
-[![Known Vulnerabilities](https://snyk.io/test/github/marshallku/react-postscribe/badge.svg)](https://snyk.io/test/github/marshallku/copytoclipboard)
-[![NPM Downloads](https://img.shields.io/npm/dm/copytoclipboard.svg)](https://www.npmjs.com/package/copytoclipboard)
+[![License](https://img.shields.io/npm/l/copy2clip.svg)](https://www.npmjs.com/package/copy2clip)
+[![NPM Version](https://img.shields.io/npm/v/copy2clip.svg)](https://www.npmjs.com/package/copy2clip)
+[![Known Vulnerabilities](https://snyk.io/test/github/marshallku/react-postscribe/badge.svg)](https://snyk.io/test/github/marshallku/copy2clip)
+[![NPM Downloads](https://img.shields.io/npm/dm/copy2clip.svg)](https://www.npmjs.com/package/copy2clip)
 
 ## Install
 
 ```bash
 # npm
-npm i copytoclipboard
+npm i copy2clip
 # yarn
-yarn add copytoclipboard
+yarn add copy2clip
 # pnpm
-pnpm i copytoclipboard
+pnpm i copy2clip
 ```
 
 ## Usage
 
 ```ts
-import { copyToClipboard } from "copytoclipboard";
+import { copyToClipboard } from "copy2clip";
 
 copyToClipboard("VALUE", () => {
     alert("Copied!");

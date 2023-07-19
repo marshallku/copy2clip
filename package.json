@@ -1,5 +1,5 @@
 {
-    "name": "copytoclipboard",
+    "name": "copy2clip",
     "version": "1.0.0",
     "description": "Simply copies a string to clipboard",
     "type": "module",
