@@ -7,7 +7,8 @@
     "module": "dist/index.esm.js",
     "types": "dist/index.d.ts",
     "scripts": {
-        "build": "NODE_ENV=production rollup --config"
+        "build": "NODE_ENV=production rollup --config",
+        "update-version": "bash scripts/update.sh"
     },
     "keywords": [],
     "author": {
