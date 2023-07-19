@@ -1,16 +1,20 @@
+import { stringify } from "../utils";
+
 /**
- * Simply copies a string to clipboard
+ * Simply copies a value to clipboard
  *
- * @param value A string value to copy
+ * @param value A value to copy
  * @param cb  Callback function
  */
-export default async function copyToClipboard(value: string, cb?: () => void) {
+export default async function copyToClipboard(value: unknown, cb?: () => void) {
+    const stringifiedValue = stringify(value);
+
     try {
-        await navigator.clipboard.writeText(value);
+        await navigator.clipboard.writeText(stringifiedValue);
     } catch {
         const textarea = document.createElement("textarea");
 
-        textarea.value = value;
+        textarea.value = stringifiedValue;
         textarea.style.position = "fixed";
         textarea.style.width = "1px";
         textarea.style.height = "1px";

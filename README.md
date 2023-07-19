@@ -30,7 +30,7 @@ copyToClipboard("VALUE", () => {
 
 ## Parameters
 
-| Property | Type       | required | Description            |
-| -------- | ---------- | -------- | ---------------------- |
-| value    | string     | true     | A string value to copy |
-| callback | () => void | false    | Callback function      |
+| Property | Type       | required | Description       |
+| -------- | ---------- | -------- | ----------------- |
+| value    | unknown    | true     | A value to copy   |
+| callback | () => void | false    | Callback function |
