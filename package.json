@@ -8,6 +8,7 @@
     "types": "dist/index.d.ts",
     "scripts": {
         "build": "NODE_ENV=production rollup --config",
+        "prepublish": "pnpm run build",
         "update-version": "bash scripts/update.sh"
     },
     "keywords": [],
