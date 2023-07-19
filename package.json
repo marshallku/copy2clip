@@ -1,12 +1,31 @@
 {
     "name": "copytoclipboard",
     "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
+    "description": "Simply copies a string to clipboard",
+    "type": "module",
+    "main": "dist/index.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "NODE_ENV=production rollup --config"
     },
     "keywords": [],
-    "author": "",
-    "license": "MIT"
+    "author": {
+        "name": "Marshall K",
+        "email": "marshall@kakao.com",
+        "url": "https://marshallku.com"
+    },
+    "license": "MIT",
+    "browserslist": "defaults, not ie 11, not ie_mob 11",
+    "devDependencies": {
+        "@babel/preset-typescript": "^7.22.5",
+        "@rollup/plugin-babel": "^6.0.3",
+        "@rollup/plugin-typescript": "^11.1.2",
+        "@types/node": "^20.4.2",
+        "prettier": "^3.0.0",
+        "rollup": "^3.26.3",
+        "rollup-plugin-dts": "^5.3.0",
+        "tslib": "^2.6.0",
+        "typescript": "^5.1.6"
+    }
 }
