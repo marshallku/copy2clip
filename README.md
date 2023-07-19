@@ -1,4 +1,4 @@
-# Copy to clipboard
+# copy2clip
 
 Simply copies a string to clipboard
 
