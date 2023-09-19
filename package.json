@@ -1,6 +1,6 @@
 {
     "name": "copy2clip",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "Simply copies a string to clipboard",
     "type": "module",
     "main": "dist/index.js",
