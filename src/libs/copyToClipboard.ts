@@ -4,9 +4,8 @@ import { stringify } from "../utils";
  * Simply copies a value to clipboard
  *
  * @param value A value to copy
- * @param cb  Callback function
  */
-export default async function copyToClipboard(value: unknown, cb?: () => void) {
+export default async function copyToClipboard(value: unknown) {
     const stringifiedValue = stringify(value);
 
     try {
@@ -26,5 +25,4 @@ export default async function copyToClipboard(value: unknown, cb?: () => void) {
         document.execCommand("copy");
         textarea.remove();
     }
-    cb?.();
 }
