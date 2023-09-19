@@ -23,14 +23,11 @@ pnpm i copy2clip
 ```ts
 import { copyToClipboard } from "copy2clip";
 
-copyToClipboard("VALUE", () => {
-    alert("Copied!");
-});
+copyToClipboard("VALUE");
 ```
 
 ## Parameters
 
-| Property | Type       | required | Description       |
-| -------- | ---------- | -------- | ----------------- |
-| value    | unknown    | true     | A value to copy   |
-| callback | () => void | false    | Callback function |
+| Property | Type    | required | Description     |
+| -------- | ------- | -------- | --------------- |
+| value    | unknown | true     | A value to copy |
